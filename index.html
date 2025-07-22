@@ -1,145 +1,104 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" class="scroll-smooth">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>La Voix des Vosges - Clément T. sacré champion régional de ricochet</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background-color: #f5f5f5;
-    }
-    header {
-      background-color: #8B0000;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
-    nav {
-      background-color: #dcdcdc;
-      padding: 10px;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 15px;
-    }
-    nav a {
-      text-decoration: none;
-      color: #333;
-      font-weight: bold;
-    }
-    .container {
-      display: flex;
-      flex-wrap: wrap;
-      margin: 20px;
-    }
-    .main-content {
-      flex: 1 1 600px;
-      background-color: white;
-      padding: 20px;
-      margin-right: 20px;
-      box-shadow: 0 0 5px rgba(0,0,0,0.1);
-    }
-    .sidebar {
-      flex: 1 1 300px;
-      background-color: #f0f0f0;
-      padding: 20px;
-      box-shadow: 0 0 5px rgba(0,0,0,0.1);
-      margin-top: 20px;
-    }
-    .article-title {
-      font-size: 24px;
-      font-weight: bold;
-    }
-    .article-date {
-      color: gray;
-      margin-bottom: 10px;
-    }
-    .photo-placeholder {
-      width: 100%;
-      height: 250px;
-      background-color: #ccc;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #666;
-      font-style: italic;
-      margin-bottom: 20px;
-    }
-    footer {
-      background-color: #8B0000;
-      color: white;
-      text-align: center;
-      padding: 10px;
-      margin-top: 40px;
-    }
-    @media (max-width: 768px) {
-      .container {
-        flex-direction: column;
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>La Voix des Vosges - Clément T. Champion de Ricochet</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Inter', 'sans-serif'] },
+          colors: {
+            primary: '#8B0000',
+            light: '#f5f5f5'
+          }
+        }
       }
-      .main-content {
-        margin-right: 0;
-      }
-    }
-  </style>
+    };
+  </script>
 </head>
-<body>
-  <header>
-    <h1>La Voix des Vosges</h1>
-    <p>Votre actualité locale au cœur de la Lorraine</p>
+<body class="bg-light text-gray-900 font-sans">
+
+  <!-- HEADER -->
+  <header class="bg-primary text-white px-6 py-6 shadow-md">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+      <div>
+        <h1 class="text-3xl font-bold">La Voix des Vosges</h1>
+        <p class="text-sm text-red-200">Votre actualité locale au cœur de la Lorraine</p>
+      </div>
+      <nav class="flex flex-wrap gap-4 text-sm font-medium">
+        <a href="#" class="hover:underline">Actualités</a>
+        <a href="#" class="hover:underline">Sports</a>
+        <a href="#" class="hover:underline">Culture</a>
+        <a href="#" class="hover:underline">Économie</a>
+        <a href="#" class="hover:underline">Météo</a>
+        <a href="#" class="hover:underline">Contact</a>
+      </nav>
+    </div>
   </header>
 
-  <nav>
-    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Actualités</a>
-    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Sports</a>
-    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Culture</a>
-    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Économie</a>
-    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Météo</a>
-    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Contact</a>
-  </nav>
+  <!-- MAIN CONTENT -->
+  <main class="max-w-7xl mx-auto p-6 grid grid-cols-1 lg:grid-cols-3 gap-8 mt-6">
+    
+    <!-- ARTICLE -->
+    <article class="lg:col-span-2 bg-white rounded-xl shadow p-6">
+      <h2 class="text-2xl font-extrabold mb-2">Clément T., 20 ans, devient notre nouveau champion régional de ricochet</h2>
+      <p class="text-sm text-gray-500 mb-4">Publié le 17 juin 2016 – Lac des Vosges (Lorraine)</p>
 
-  <div class="container">
-    <div class="main-content">
-      <div class="article-title">Clément T., 20 ans, devient notre nouveau champion régional de ricochet</div>
-      <div class="article-date">Publié le 17 juin 2016 - Lac des Vosges (Lorraine)</div>
+      <img src="https://www.aubergedeliezey.fr/IMG/jpg/lac-geradmer-bord.jpg" alt="Lac de Gérardmer" class="w-full rounded-lg mb-6">
 
-      <img src="https://www.aubergedeliezey.fr/IMG/jpg/lac-geradmer-bord.jpg" alt="Lac de Gérardmer" style="width:100%; margin-bottom: 20px; border-radius: 8px;">
+      <p class="mb-4 leading-relaxed">
+        C’est sous un ciel légèrement voilé mais une ambiance survoltée que s’est tenue samedi dernier la 17<sup>e</sup> édition du Championnat Régional de Ricochet, au traditionnel Lac des Vosges. À la surprise générale, c’est un jeune local, Clément T., 20 ans, originaire de Metz, qui s’est imposé avec brio face à une concurrence pourtant redoutable.
+      </p>
 
-      <p>C’est sous un ciel légèrement voilé mais une ambiance survoltée que s’est tenue samedi dernier la 17<sup>e</sup> édition du Championnat Régional de Ricochet, au traditionnel Lac des Vosges. À la surprise générale, c’est un jeune local, Clément T., 20 ans, originaire de Metz, qui s’est imposé avec brio face à une concurrence pourtant redoutable.</p>
+      <p class="mb-4">
+        Avec un tir exceptionnel de <strong class="text-primary">18 rebonds parfaitement fluides</strong>, validé par les juges de touche, Clément a littéralement fait trembler la surface du lac… et les anciens favoris.
+      </p>
 
-      <p>Avec un tir exceptionnel de <strong>18 rebonds parfaitement fluides</strong>, validé par les juges de touche, Clément a littéralement fait trembler la surface du lac… et les anciens favoris.</p>
-
-      <blockquote>
+      <blockquote class="border-l-4 border-primary pl-4 italic text-gray-700 mb-6">
         « Je visais 12, mais dès le 7<sup>e</sup> ricochet, j’ai senti que la pierre voulait aller au bout », confie Clément, les pieds encore mouillés, un large sourire aux lèvres.
       </blockquote>
 
-      <p>Son geste, à la fois souple et précis, a été salué par les spécialistes présents. Jean-Louis Machard, entraîneur de l’équipe des Vosges, n’a pas tari d’éloges :</p>
-      <blockquote>
+      <p class="mb-4">Son geste, à la fois souple et précis, a été salué par les spécialistes présents. Jean-Louis Machard, entraîneur de l’équipe des Vosges, n’a pas tari d’éloges :</p>
+
+      <blockquote class="border-l-4 border-primary pl-4 italic text-gray-700 mb-6">
         « On sent chez Clément une vraie connexion avec la pierre. Il ne lance pas : il communique. »
       </blockquote>
 
-      <h3>Une montée fulgurante</h3>
-      <p>Inscrit pour la première fois au championnat régional cette année, Clément n’avait jamais participé à une compétition officielle auparavant. Il aurait été repéré lors d’un barbecue au bord de la Moselle, où il aurait époustouflé ses amis en envoyant "une ardoise jusqu’à l’autre rive".</p>
+      <h3 class="text-xl font-semibold mt-6 mb-2">Une montée fulgurante</h3>
+      <p class="mb-4">
+        Inscrit pour la première fois au championnat régional cette année, Clément n’avait jamais participé à une compétition officielle auparavant. Il aurait été repéré lors d’un barbecue au bord de la Moselle, où il aurait époustouflé ses amis en envoyant "une ardoise jusqu’à l’autre rive".
+      </p>
 
-      <h3>Et maintenant ?</h3>
-      <p>La victoire de Clément lui ouvre automatiquement les portes du Championnat National de Ricochet, prévu fin août sur les berges du Lac de Gérardmer.</p>
-      <p>D’ici là, il prévoit de s’entraîner « entre deux sessions de Mario Kart », et cherche toujours, selon ses dires, « <em>la pierre parfaite</em> ».</p>
-    </div>
+      <h3 class="text-xl font-semibold mt-6 mb-2">Et maintenant ?</h3>
+      <p class="mb-4">
+        La victoire de Clément lui ouvre automatiquement les portes du Championnat National de Ricochet, prévu fin août sur les berges du Lac de Gérardmer.
+      </p>
+      <p class="mb-4">
+        D’ici là, il prévoit de s’entraîner « entre deux sessions de Mario Kart », et cherche toujours, selon ses dires, <em>« la pierre parfaite »</em>.
+      </p>
+    </article>
 
-    <div class="sidebar">
-      <h3>À la une</h3>
-      <ul>
-        <li>Les orages attendus ce week-end dans les Vosges</li>
-        <li>Festival de musique : Gérardmer vibre au son de l'été</li>
-        <li>Nouveau record au lancer de bottes de foin à Cornimont</li>
-        <li>Recette locale : les beignets aux myrtilles revisitent la tradition</li>
+    <!-- SIDEBAR -->
+    <aside class="bg-white rounded-xl shadow p-6">
+      <h3 class="text-lg font-bold mb-4">À la une</h3>
+      <ul class="space-y-3 text-sm text-gray-700">
+        <li class="hover:text-primary cursor-pointer">🌩️ Les orages attendus ce week-end dans les Vosges</li>
+        <li class="hover:text-primary cursor-pointer">🎶 Festival : Gérardmer vibre au son de l'été</li>
+        <li class="hover:text-primary cursor-pointer">🥇 Nouveau record au lancer de bottes à Cornimont</li>
+        <li class="hover:text-primary cursor-pointer">🍇 Recette : les beignets aux myrtilles revisitent la tradition</li>
       </ul>
-    </div>
-  </div>
+    </aside>
+  </main>
 
-  <footer>
-    &copy; 2016 La Voix des Vosges - Tous droits réservés
+  <!-- FOOTER -->
+  <footer class="bg-primary text-white mt-12 text-center py-4 text-sm">
+    &copy; 2016 La Voix des Vosges — Tous droits réservés
   </footer>
+
 </body>
 </html>
