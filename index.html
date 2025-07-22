@@ -1,103 +1,108 @@
 <!DOCTYPE html>
-<html lang="fr" class="scroll-smooth">
+<html lang="fr">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>La Voix des Vosges - Clément T. Champion de Ricochet</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vosges Matin – Clément T. sacré champion régional</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   <script>
     tailwind.config = {
       theme: {
         extend: {
-          fontFamily: { sans: ['Inter', 'sans-serif'] },
           colors: {
-            primary: '#8B0000',
-            light: '#f5f5f5'
+            vmred: '#e20613',
+            lightgray: '#f5f5f5',
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif']
           }
         }
       }
     };
   </script>
 </head>
-<body class="bg-light text-gray-900 font-sans">
+<body class="bg-lightgray text-gray-900 font-sans">
 
   <!-- HEADER -->
-  <header class="bg-primary text-white px-6 py-6 shadow-md">
-    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
-      <div>
-        <h1 class="text-3xl font-bold">La Voix des Vosges</h1>
-        <p class="text-sm text-red-200">Votre actualité locale au cœur de la Lorraine</p>
+  <header class="bg-vmred text-white shadow">
+    <div class="max-w-7xl mx-auto flex justify-between items-center px-4 py-2 text-sm">
+      <div class="flex items-center gap-2">
+        <span class="text-white text-2xl font-extrabold">Vosges Matin</span>
       </div>
-      <nav class="flex flex-wrap gap-4 text-sm font-medium">
-        <a href="#" class="hover:underline">Actualités</a>
-        <a href="#" class="hover:underline">Sports</a>
-        <a href="#" class="hover:underline">Culture</a>
-        <a href="#" class="hover:underline">Économie</a>
-        <a href="#" class="hover:underline">Météo</a>
-        <a href="#" class="hover:underline">Contact</a>
-      </nav>
+      <div class="hidden md:flex items-center gap-4 text-xs">
+        <a href="https://www.vosgesmatin.fr/meteo" target="_blank" class="hover:underline">Météo</a>
+        <a href="https://www.vosgesmatin.fr/services/mon-compte" target="_blank" class="hover:underline">Mon compte</a>
+        <a href="https://www.vosgesmatin.fr/abonnement" target="_blank" class="bg-white text-vmred px-2 py-1 rounded hover:bg-gray-100 font-semibold">S'abonner</a>
+      </div>
     </div>
+    <nav class="bg-white text-sm text-gray-800 border-t border-gray-200 shadow-sm">
+      <div class="max-w-7xl mx-auto px-4 py-2 flex flex-wrap gap-4">
+        <a href="https://www.vosgesmatin.fr/actualite" target="_blank" class="hover:underline">Actualité</a>
+        <a href="https://www.vosgesmatin.fr/faits-divers" target="_blank" class="hover:underline">Faits Divers</a>
+        <a href="https://www.vosgesmatin.fr/sport" target="_blank" class="hover:underline">Sport</a>
+        <a href="https://www.vosgesmatin.fr/economie" target="_blank" class="hover:underline">Économie</a>
+        <a href="https://www.vosgesmatin.fr/culture-loisirs" target="_blank" class="hover:underline">Culture</a>
+        <a href="https://www.vosgesmatin.fr/vosges" target="_blank" class="hover:underline">Vosges</a>
+      </div>
+    </nav>
   </header>
 
-  <!-- MAIN CONTENT -->
-  <main class="max-w-7xl mx-auto p-6 grid grid-cols-1 lg:grid-cols-3 gap-8 mt-6">
-    
+  <!-- MAIN -->
+  <main class="max-w-5xl mx-auto px-4 py-8 grid grid-cols-1 lg:grid-cols-3 gap-8">
+
     <!-- ARTICLE -->
-    <article class="lg:col-span-2 bg-white rounded-xl shadow p-6">
-      <h2 class="text-2xl font-extrabold mb-2">Clément T., 20 ans, devient notre nouveau champion régional de ricochet</h2>
-      <p class="text-sm text-gray-500 mb-4">Publié le 17 juin 2016 – Lac des Vosges (Lorraine)</p>
+    <article class="lg:col-span-2 bg-white p-6 rounded shadow-md">
+      <p class="text-sm text-gray-500">Publié le 17 juin 2016 à 14:37 | Mis à jour le 17 juin 2016 à 14:40</p>
+      <h1 class="text-3xl font-bold text-vmred mt-2 mb-4">Clément T., 20 ans, devient notre nouveau champion régional de ricochet</h1>
+      <img src="https://www.aubergedeliezey.fr/IMG/jpg/lac-geradmer-bord.jpg" alt="Lac des Vosges" class="rounded mb-6 w-full">
 
-      <img src="https://www.aubergedeliezey.fr/IMG/jpg/lac-geradmer-bord.jpg" alt="Lac de Gérardmer" class="w-full rounded-lg mb-6">
+      <p class="mb-4">C’est sous un ciel légèrement voilé mais une ambiance survoltée que s’est tenue samedi dernier la 17<sup>e</sup> édition du Championnat Régional de Ricochet, au traditionnel Lac des Vosges. À la surprise générale, c’est un jeune local, Clément T., 20 ans, originaire de Metz, qui s’est imposé avec brio face à une concurrence pourtant redoutable.</p>
 
-      <p class="mb-4 leading-relaxed">
-        C’est sous un ciel légèrement voilé mais une ambiance survoltée que s’est tenue samedi dernier la 17<sup>e</sup> édition du Championnat Régional de Ricochet, au traditionnel Lac des Vosges. À la surprise générale, c’est un jeune local, Clément T., 20 ans, originaire de Metz, qui s’est imposé avec brio face à une concurrence pourtant redoutable.
-      </p>
+      <p class="mb-4"><strong>Avec un tir exceptionnel de 18 rebonds parfaitement fluides</strong>, validé par les juges de touche, Clément a littéralement fait trembler la surface du lac… et les anciens favoris.</p>
 
-      <p class="mb-4">
-        Avec un tir exceptionnel de <strong class="text-primary">18 rebonds parfaitement fluides</strong>, validé par les juges de touche, Clément a littéralement fait trembler la surface du lac… et les anciens favoris.
-      </p>
-
-      <blockquote class="border-l-4 border-primary pl-4 italic text-gray-700 mb-6">
+      <blockquote class="border-l-4 border-vmred pl-4 italic text-gray-700 mb-6">
         « Je visais 12, mais dès le 7<sup>e</sup> ricochet, j’ai senti que la pierre voulait aller au bout », confie Clément, les pieds encore mouillés, un large sourire aux lèvres.
       </blockquote>
 
       <p class="mb-4">Son geste, à la fois souple et précis, a été salué par les spécialistes présents. Jean-Louis Machard, entraîneur de l’équipe des Vosges, n’a pas tari d’éloges :</p>
 
-      <blockquote class="border-l-4 border-primary pl-4 italic text-gray-700 mb-6">
+      <blockquote class="border-l-4 border-vmred pl-4 italic text-gray-700 mb-6">
         « On sent chez Clément une vraie connexion avec la pierre. Il ne lance pas : il communique. »
       </blockquote>
 
-      <h3 class="text-xl font-semibold mt-6 mb-2">Une montée fulgurante</h3>
-      <p class="mb-4">
-        Inscrit pour la première fois au championnat régional cette année, Clément n’avait jamais participé à une compétition officielle auparavant. Il aurait été repéré lors d’un barbecue au bord de la Moselle, où il aurait époustouflé ses amis en envoyant "une ardoise jusqu’à l’autre rive".
-      </p>
+      <h2 class="text-xl font-semibold mt-6 mb-2">Une montée fulgurante</h2>
+      <p class="mb-4">Inscrit pour la première fois au championnat régional cette année, Clément n’avait jamais participé à une compétition officielle auparavant. Il aurait été repéré lors d’un barbecue au bord de la Moselle, où il aurait époustouflé ses amis en envoyant "une ardoise jusqu’à l’autre rive".</p>
 
-      <h3 class="text-xl font-semibold mt-6 mb-2">Et maintenant ?</h3>
-      <p class="mb-4">
-        La victoire de Clément lui ouvre automatiquement les portes du Championnat National de Ricochet, prévu fin août sur les berges du Lac de Gérardmer.
-      </p>
-      <p class="mb-4">
-        D’ici là, il prévoit de s’entraîner « entre deux sessions de Mario Kart », et cherche toujours, selon ses dires, <em>« la pierre parfaite »</em>.
-      </p>
+      <h2 class="text-xl font-semibold mt-6 mb-2">Et maintenant ?</h2>
+      <p class="mb-4">La victoire de Clément lui ouvre automatiquement les portes du Championnat National de Ricochet, prévu fin août sur les berges du Lac de Gérardmer.</p>
+      <p class="mb-4">D’ici là, il prévoit de s’entraîner « entre deux sessions de Mario Kart », et cherche toujours, selon ses dires, <em>« la pierre parfaite »</em>.</p>
     </article>
 
     <!-- SIDEBAR -->
-    <aside class="bg-white rounded-xl shadow p-6">
-      <h3 class="text-lg font-bold mb-4">À la une</h3>
-      <ul class="space-y-3 text-sm text-gray-700">
-        <li class="hover:text-primary cursor-pointer">🌩️ Les orages attendus ce week-end dans les Vosges</li>
-        <li class="hover:text-primary cursor-pointer">🎶 Festival : Gérardmer vibre au son de l'été</li>
-        <li class="hover:text-primary cursor-pointer">🥇 Nouveau record au lancer de bottes à Cornimont</li>
-        <li class="hover:text-primary cursor-pointer">🍇 Recette : les beignets aux myrtilles revisitent la tradition</li>
-      </ul>
+    <aside class="space-y-6">
+      <!-- Faux encart pub -->
+      <div class="bg-white p-4 rounded shadow text-center">
+        <p class="text-xs text-gray-500 uppercase mb-2">Publicité</p>
+        <div class="bg-gray-200 h-40 flex items-center justify-center text-gray-500">Espace publicitaire</div>
+      </div>
+
+      <!-- Articles liés -->
+      <div class="bg-white p-4 rounded shadow">
+        <h3 class="text-lg font-semibold mb-3">À lire aussi</h3>
+        <ul class="space-y-2 text-sm">
+          <li><a href="https://www.vosgesmatin.fr/sport" target="_blank" class="hover:text-vmred">Gérardmer accueille un triathlon régional ce dimanche</a></li>
+          <li><a href="https://www.vosgesmatin.fr/vosges" target="_blank" class="hover:text-vmred">Les Vosges sous la menace d'orages violents</a></li>
+          <li><a href="https://www.vosgesmatin.fr/culture-loisirs" target="_blank" class="hover:text-vmred">Festival de la Myrtille : une tradition revisitée</a></li>
+        </ul>
+      </div>
     </aside>
   </main>
 
   <!-- FOOTER -->
-  <footer class="bg-primary text-white mt-12 text-center py-4 text-sm">
-    &copy; 2016 La Voix des Vosges — Tous droits réservés
+  <footer class="bg-gray-200 py-6 text-center text-xs text-gray-600">
+    © 2025 Vosges Matin (parodie) — Tous droits réservés. <br/>
+    Ceci est une page fictive à but humoristique. Visitez le vrai site ici : 
+    <a href="https://www.vosgesmatin.fr" target="_blank" class="text-vmred underline">vosgesmatin.fr</a>
   </footer>
 
 </body>
